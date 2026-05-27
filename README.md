@@ -173,20 +173,6 @@ java -cp bin library.Main
 
 ---
 
-# 🧪 Testing Evidence
-
-| Test Case | Expected Result | Status |
-|---|---|---|
-| Add Book | Book added successfully | ✅ Passed |
-| Register Member | Member registered | ✅ Passed |
-| Borrow Book | Book borrowed | ✅ Passed |
-| Return Book | Book returned | ✅ Passed |
-| Search Book | Matching books displayed | ✅ Passed |
-| Remove Book | Book removed | ✅ Passed |
-| Data Persistence | Data saved after restart | ✅ Passed |
-
----
-
 # 💾 Data Persistence
 
 The system stores data permanently using text files:
@@ -216,7 +202,3 @@ This ensures that data remains available even after the application closes.
 B.Tech Student | AI & Machine Learning Enthusiast
 
 ---
-
-# ⭐ GitHub Repository
-
-Library Management System Project Repository
