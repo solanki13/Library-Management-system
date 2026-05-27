@@ -1,65 +1,222 @@
-# Console-Based Library Management System
+# 📚 Console-Based Library Management System
 
-## 📖 Project Description
+A Java-based console application designed to manage library operations efficiently using Object-Oriented Programming (OOP) concepts and file handling techniques.
 
-A Java console-based application for managing library operations including:
-
-- Book management
-- Member registration
-- Borrow and return operations
-- Library statistics
-- File-based data persistence
-
-The system uses Object-Oriented Programming (OOP) concepts and stores data permanently using text files.
+This system allows librarians to:
+- manage books
+- register members
+- borrow and return books
+- maintain persistent records using text files
 
 ---
 
 # 🚀 Features
 
+## 📖 Book Management
 - Add new books
 - Remove books
-- Search books
-- Register members
-- Borrow books
-- Return books
-- View library statistics
-- File handling for data persistence
-- Console-based menu system
+- View all books
+- Search books by title or author
+
+## 👤 Member Management
+- Register new library members
+- Manage borrowed books
+
+## 🔄 Borrow & Return System
+- Borrow books with due dates
+- Return borrowed books
+- Track availability status
+
+## 💾 File Handling
+- Save books permanently in `books.txt`
+- Save members permanently in `members.txt`
+- Automatically load saved data when application starts
+
+## 📊 Library Statistics
+- Total books
+- Available books
+- Borrowed books
+- Registered members
 
 ---
 
 # 🛠 Technologies Used
 
-- Java
-- OOP Concepts
-- ArrayList
-- File Handling
-- Exception Handling
+| Technology | Purpose |
+|---|---|
+| Java | Core programming language |
+| OOP Concepts | Encapsulation, classes, objects |
+| ArrayList | Dynamic data storage |
+| File Handling | Data persistence |
+| VS Code | Development environment |
+| Git & GitHub | Version control |
 
 ---
 
 # 📂 Project Structure
 
+```text
 week3-library-system/
-│── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ ├── library/
-│ │ │ │ ├── Main.java
-│ │ │ │ ├── Book.java
-│ │ │ │ ├── Member.java
-│ │ │ │ ├── Library.java
-│ │ │ │ └── FileHandler.java
-│── data/
-│ ├── books.txt
-│ └── members.txt
-│── README.md
+│
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── library/
+│       │       ├── Main.java
+│       │       ├── Book.java
+│       │       ├── Member.java
+│       │       ├── Library.java
+│       │       └── FileHandler.java
+│       │
+│       └── resources/
+│
+├── data/
+│   ├── books.txt
+│   └── members.txt
+│
+├── bin/
+│
+├── README.md
+├── .gitignore
+└── pom.xml
+```
 
 ---
 
-# ▶️ How to Run
+# ⚙️ System Workflow
 
-## Compile
+1. User selects an option from the menu.
+2. System processes the selected operation.
+3. Data is stored using ArrayLists.
+4. Updated information is saved into text files.
+5. Saved records are loaded automatically on the next execution.
+
+---
+
+# 🧠 OOP Concepts Used
+
+## Encapsulation
+Private variables with public getter methods.
+
+## Classes and Objects
+- `Book`
+- `Member`
+- `Library`
+- `FileHandler`
+
+## Constructors
+Used to initialize objects.
+
+## Methods
+Used for:
+- adding books
+- borrowing books
+- searching books
+- returning books
+
+---
+
+# ⚙ Algorithms and Data Structures
+
+## Data Structures Used
+- `ArrayList<Book>`
+- `ArrayList<Member>`
+
+## Algorithms Used
+
+### Linear Search
+Used for:
+- finding books
+- finding members
+- searching by ISBN
+
+### File Processing
+Used:
+- `BufferedReader`
+- `BufferedWriter`
+
+for reading and writing data files.
+
+---
+
+# ▶️ How to Run the Project
+
+## Step 1: Compile
 
 ```bash
 javac -d bin src/main/java/library/*.java
+```
+
+## Step 2: Run
+
+```bash
+java -cp bin library.Main
+```
+
+---
+
+# 📸 Sample Menu
+
+```text
+=== LIBRARY MANAGEMENT SYSTEM ===
+
+1. Add New Book
+2. View All Books
+3. Search Books
+4. Register Member
+5. Borrow Book
+6. Return Book
+7. View Library Statistics
+8. Remove Book
+9. Exit
+```
+
+---
+
+# 🧪 Testing Evidence
+
+| Test Case | Expected Result | Status |
+|---|---|---|
+| Add Book | Book added successfully | ✅ Passed |
+| Register Member | Member registered | ✅ Passed |
+| Borrow Book | Book borrowed | ✅ Passed |
+| Return Book | Book returned | ✅ Passed |
+| Search Book | Matching books displayed | ✅ Passed |
+| Remove Book | Book removed | ✅ Passed |
+| Data Persistence | Data saved after restart | ✅ Passed |
+
+---
+
+# 💾 Data Persistence
+
+The system stores data permanently using text files:
+
+- `books.txt`
+- `members.txt`
+
+This ensures that data remains available even after the application closes.
+
+---
+
+# 🚀 Future Enhancements
+
+- GUI-based version using JavaFX
+- Database integration using MySQL
+- Admin authentication system
+- Reservation system
+- Fine calculation system
+- Email notifications
+
+---
+
+# 👩‍💻 Author
+
+**Priyanka Solanki**
+
+B.Tech Student | AI & Machine Learning Enthusiast
+
+---
+
+# ⭐ GitHub Repository
+
+Library Management System Project Repository
